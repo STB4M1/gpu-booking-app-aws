@@ -29,3 +29,20 @@ Bedrock Claude（自然文解析）
 
 DynamoDB
   └── GpuReservations, Users テーブル
+```
+---
+
+## 環境変数の設定（.env）
+
+本アプリでは API のエンドポイントなどを .env ファイルで管理しています。
+
+.env はセキュリティの観点から Git に含めていません。
+
+### 設定手順
+frontendディレクトリに移動．
+.env をエディタで開き、以下のように設定
+
+#### API Gatewayのエンドポイント
+```
+AWS_API_URL=https://your-api-id.execute-api.us-east-1.amazonaws.com/prod/gpu-analyze-llm
+```
