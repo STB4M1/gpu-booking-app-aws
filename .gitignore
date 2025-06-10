@@ -1,0 +1,47 @@
+# ─────────────────────────────
+# Flutter関連（frontend/booking_app）
+# ─────────────────────────────
+frontend/booking_app/.dart_tool/
+frontend/booking_app/.idea/
+frontend/booking_app/.vscode/
+frontend/booking_app/build/
+frontend/booking_app/.flutter-plugins
+frontend/booking_app/.flutter-plugins-dependencies
+frontend/booking_app/packages
+frontend/booking_app/pubspec.lock
+frontend/booking_app/.env # ← APIキーなど秘匿情報は絶対除外！
+
+# macOS / Android Studio 自動生成
+frontend/booking_app/*.iml
+frontend/booking_app/android/.gradle
+frontend/booking_app/ios/Pods
+frontend/booking_app/ios/Flutter/Flutter.framework
+frontend/booking_app/ios/Flutter/Flutter.podspec
+
+# Web build artifacts
+frontend/booking_app/web/.dart_tool/
+frontend/booking_app/web/.js_build/
+frontend/booking_app/web/build/
+
+# ─────────────────────────────
+# Python Lambda関連（backend）
+# ─────────────────────────────
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.egg-info/
+backend/.venv/
+backend/.env
+backend/env/
+backend/venv/
+backend/*.log
+backend/.pytest_cache/
+backend/.mypy_cache/
+
+# ─────────────────────────────
+# 共通
+# ─────────────────────────────
+.DS_Store
+*.log
+.env
+*.swp
