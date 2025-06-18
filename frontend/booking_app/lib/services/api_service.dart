@@ -118,7 +118,7 @@ static Future<List<Reservation>> fetchPendingConflicts() async {
   }
 }
 
-  static Future<void> confirmCancelReservation(String reservationId) async {
+  static Future<void> confirmCancelReservation(String reservationId, {required String decision}) async {
     final url = Uri.parse(baseUrl); // 固定URLにする
     final headers = await _getAuthHeaders();
 
@@ -128,7 +128,7 @@ static Future<List<Reservation>> fetchPendingConflicts() async {
       body: jsonEncode({
         "action": "confirm_reject",
         "reservation_id": reservationId,
-        "decision": "approve",
+        "decision": decision,
       }),
     ).timeout(const Duration(seconds: 5));
 
