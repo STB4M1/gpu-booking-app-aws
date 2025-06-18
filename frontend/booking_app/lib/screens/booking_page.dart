@@ -107,6 +107,24 @@ Future<void> sendText() async {
                   maxLines: 3,
                   keyboardType: TextInputType.multiline,
                 ),
+                RichText(
+                  text: TextSpan(
+                    style: TextStyle(
+                      fontSize: 14,
+                      color: Colors.grey,
+                    ),
+                    children: [
+                      TextSpan(
+                        text: '\n📋 必要事項:',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      TextSpan(
+                        text:
+                            ' 日付・開始時間・終了時間（または使用時間）・目的・サーバー名',
+                      ),
+                    ],
+                  ),
+                ),
                 const SizedBox(height: 16),
                 ElevatedButton(
                   onPressed: sendText,
