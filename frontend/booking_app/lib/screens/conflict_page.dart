@@ -68,7 +68,7 @@ class _ConflictPageState extends State<ConflictPage> {
                         alignment: Alignment.centerRight,
                         child: ElevatedButton(
                           onPressed: () async {
-                            await ApiService.confirmCancelReservation(r.id.toString());
+                            await ApiService.confirmCancelReservation(r.id.toString(), decision: "reject");
                             ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(content: Text("予約を承諾（拒否）しました")),
                             );
